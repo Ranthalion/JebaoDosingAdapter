@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name jebaoDosingAdapter)(type KiCad)(uri ${KIPRJMOD}/jebaoDosingAdapter.pretty)(options "")(descr ""))
+)
