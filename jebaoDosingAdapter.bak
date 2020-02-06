@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:jebaoDosingAdapter-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -178,9 +178,69 @@ Wire Wire Line
 Wire Wire Line
 	6200 2550 5700 2550
 Wire Wire Line
-	6200 2650 5700 2650
+	6200 2750 5950 2750
 Wire Wire Line
-	5700 2750 6200 2750
+	5950 2750 5950 2650
 Wire Wire Line
-	6200 2850 5700 2850
+	5950 2650 5700 2650
+Wire Wire Line
+	6200 2850 5900 2850
+Wire Wire Line
+	5900 2850 5900 2750
+Wire Wire Line
+	5900 2750 5700 2750
+Wire Wire Line
+	6200 2650 6050 2650
+Wire Wire Line
+	6050 2650 6050 2900
+Wire Wire Line
+	6050 2900 5850 2900
+Wire Wire Line
+	5850 2900 5850 2850
+Wire Wire Line
+	5850 2850 5700 2850
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5D9A0E71
+P 7850 2550
+F 0 "H?" H 7950 2596 50  0000 L CNN
+F 1 "MountingHole" H 7950 2505 50  0000 L CNN
+F 2 "" H 7850 2550 50  0001 C CNN
+F 3 "~" H 7850 2550 50  0001 C CNN
+	1    7850 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5D9A0EAC
+P 7850 2750
+F 0 "H?" H 7950 2796 50  0000 L CNN
+F 1 "MountingHole" H 7950 2705 50  0000 L CNN
+F 2 "" H 7850 2750 50  0001 C CNN
+F 3 "~" H 7850 2750 50  0001 C CNN
+	1    7850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5D9A0ED0
+P 7850 2950
+F 0 "H?" H 7950 2996 50  0000 L CNN
+F 1 "MountingHole" H 7950 2905 50  0000 L CNN
+F 2 "" H 7850 2950 50  0001 C CNN
+F 3 "~" H 7850 2950 50  0001 C CNN
+	1    7850 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5D9A0EFA
+P 7850 3150
+F 0 "H?" H 7950 3196 50  0000 L CNN
+F 1 "MountingHole" H 7950 3105 50  0000 L CNN
+F 2 "" H 7850 3150 50  0001 C CNN
+F 3 "~" H 7850 3150 50  0001 C CNN
+	1    7850 3150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

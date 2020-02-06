@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:jebaoDosingAdapter-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -26,23 +26,12 @@ F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 5400 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:6P6C J3
-U 1 1 5D71C0A6
-P 6600 2750
-F 0 "J3" H 6270 2754 50  0000 R CNN
-F 1 "6P6C" H 6270 2845 50  0000 R CNN
-F 2 "jebaoDosingAdapter:RJ11" V 6600 2775 50  0001 C CNN
-F 3 "~" V 6600 2775 50  0001 C CNN
-	1    6600 2750
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5D71C249
 P 6600 3450
 F 0 "J2" H 6706 3628 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 6300 3400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6600 3450 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 6600 3450 50  0001 C CNN
 F 3 "~" H 6600 3450 50  0001 C CNN
 	1    6600 3450
 	1    0    0    -1  
@@ -118,7 +107,7 @@ U 1 1 5D71C4F3
 P 4250 2750
 F 0 "J1" H 4356 3128 50  0000 C CNN
 F 1 "Conn_01x05_Male" H 4356 3037 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 4250 2750 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B05B-XH-A_1x05_P2.50mm_Vertical" H 4250 2750 50  0001 C CNN
 F 3 "~" H 4250 2750 50  0001 C CNN
 	1    4250 2750
 	1    0    0    -1  
@@ -150,53 +139,116 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR04
 U 1 1 5D71CEE9
-P 6150 3000
-F 0 "#PWR04" H 6150 2850 50  0001 C CNN
-F 1 "+12V" H 6165 3173 50  0000 C CNN
-F 2 "" H 6150 3000 50  0001 C CNN
-F 3 "" H 6150 3000 50  0001 C CNN
-	1    6150 3000
+P 6700 2850
+F 0 "#PWR04" H 6700 2700 50  0001 C CNN
+F 1 "+12V" H 6715 3023 50  0000 C CNN
+F 2 "" H 6700 2850 50  0001 C CNN
+F 3 "" H 6700 2850 50  0001 C CNN
+	1    6700 2850
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	6150 3000 6150 2950
+	6700 2850 6700 2800
 Wire Wire Line
-	6150 2950 6200 2950
+	6700 2800 6750 2800
 $Comp
 L power:+12V #PWR05
 U 1 1 5D7302C7
-P 6150 2450
-F 0 "#PWR05" H 6150 2300 50  0001 C CNN
-F 1 "+12V" V 6165 2578 50  0000 L CNN
-F 2 "" H 6150 2450 50  0001 C CNN
-F 3 "" H 6150 2450 50  0001 C CNN
-	1    6150 2450
-	0    -1   1    0   
+P 6700 2300
+F 0 "#PWR05" H 6700 2150 50  0001 C CNN
+F 1 "+12V" H 6600 2450 50  0000 L CNN
+F 2 "" H 6700 2300 50  0001 C CNN
+F 3 "" H 6700 2300 50  0001 C CNN
+	1    6700 2300
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 2450 6150 2450
+	6750 2300 6700 2300
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D9A0E71
+P 7850 2550
+F 0 "H1" H 7950 2596 50  0000 L CNN
+F 1 "MountingHole" H 7950 2505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7850 2550 50  0001 C CNN
+F 3 "~" H 7850 2550 50  0001 C CNN
+	1    7850 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5D9A0EAC
+P 7850 2750
+F 0 "H2" H 7950 2796 50  0000 L CNN
+F 1 "MountingHole" H 7950 2705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7850 2750 50  0001 C CNN
+F 3 "~" H 7850 2750 50  0001 C CNN
+	1    7850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5D9A0ED0
+P 7850 2950
+F 0 "H3" H 7950 2996 50  0000 L CNN
+F 1 "MountingHole" H 7950 2905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7850 2950 50  0001 C CNN
+F 3 "~" H 7850 2950 50  0001 C CNN
+	1    7850 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5D9A0EFA
+P 7850 3150
+F 0 "H4" H 7950 3196 50  0000 L CNN
+F 1 "MountingHole" H 7950 3105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7850 3150 50  0001 C CNN
+F 3 "~" H 7850 3150 50  0001 C CNN
+	1    7850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:6P6C J3
+U 1 1 5D71C0A6
+P 7150 2600
+F 0 "J3" H 6820 2604 50  0000 R CNN
+F 1 "6P6C" H 6820 2695 50  0000 R CNN
+F 2 "jebaoDosingAdapter:RJ11" V 7150 2625 50  0001 C CNN
+F 3 "~" V 7150 2625 50  0001 C CNN
+	1    7150 2600
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	6200 2550 5700 2550
+	5700 2550 5900 2550
 Wire Wire Line
-	6200 2750 5950 2750
+	5700 2650 5900 2650
 Wire Wire Line
-	5950 2750 5950 2650
+	5700 2750 5900 2750
 Wire Wire Line
-	5950 2650 5700 2650
+	5700 2850 5900 2850
 Wire Wire Line
-	6200 2850 5900 2850
+	6750 2400 6450 2400
 Wire Wire Line
-	5900 2850 5900 2750
+	6750 2500 6450 2500
 Wire Wire Line
-	5900 2750 5700 2750
+	6750 2600 6450 2600
 Wire Wire Line
-	6200 2650 6050 2650
-Wire Wire Line
-	6050 2650 6050 2900
-Wire Wire Line
-	6050 2900 5850 2900
-Wire Wire Line
-	5850 2900 5850 2850
-Wire Wire Line
-	5850 2850 5700 2850
+	6750 2700 6450 2700
+Text Label 5900 2550 0    50   ~ 0
+O1
+Text Label 6450 2500 0    50   ~ 0
+O1
+Text Label 5900 2650 0    50   ~ 0
+O2
+Text Label 6450 2700 0    50   ~ 0
+O2
+Text Label 5900 2750 0    50   ~ 0
+O3
+Text Label 6450 2600 0    50   ~ 0
+O3
+Text Label 5900 2850 0    50   ~ 0
+O4
+Text Label 6450 2400 0    50   ~ 0
+O4
 $EndSCHEMATC
